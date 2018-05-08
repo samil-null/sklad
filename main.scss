@@ -1,0 +1,269 @@
+$red:#f24941;
+$blue:#1184d3;
+@media (min-width: 1200px){
+    .container {
+        width: 1142px;
+    }
+}
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+ul{
+    margin-bottom: 0;
+}
+nav{
+    border-top:#d6d3d3 solid 2px;
+    border-bottom:#d6d3d3 solid 2px;
+}
+header{
+    padding-top:16px;
+}
+.intro-header-text{
+    &__text{
+        letter-spacing: -0.2px;
+        line-height: 23px;
+    }
+}
+.nav-list{
+    display: flex;
+    justify-content: space-between;
+    padding:7px 16px;
+    &__link{
+        color:#000;
+        font-weight: 700;
+        text-transform: uppercase;
+        &:hover{
+            transition: .2s ease-in-out;
+            color:$red;
+            text-decoration: underline;
+        }
+    }
+}
+.breadcrumb{
+    background: none;
+    margin-bottom: 0;
+    padding: 0;
+}
+.breadcrumb-list{
+    display: flex;
+    justify-content: center;
+    &__item{
+        padding: 7px 10px;
+        &:after{
+            content:'/';
+            margin-left: 17px;
+            display: inline-block;
+        }
+    }
+    &__link{
+        color:#000;
+        font-size: 12px;
+    }
+}
+.title-product{
+    text-align: center;
+    margin-top: 5px;
+    &__text{
+        font-size: 35px;
+        font-weight: bold;
+        text-transform: uppercase;
+        letter-spacing: 2.4px;
+    }
+}
+.work-time-wrap{
+    background: url(http://sklad.moscow/images/time.png) no-repeat 25px center;
+    padding: 5px 0 0 0;
+    padding-left: 71px;
+    &__text{
+        letter-spacing: .1px;
+    }
+}
+.wrap-social-list{
+    display: flex;
+}
+.social-list{
+    &__item{
+        line-height: 19px;
+    }
+    &__text{
+        font-size:13px;
+        color:#000;
+    }
+}
+.header-social-address{
+    max-width: 190px;
+}
+.no-wrap-text{
+    white-space: nowrap;
+}
+.list-img-product{
+    margin-left: 66px;
+    max-width: 105px;
+    &__item{
+        max-width: 104px;
+        margin-bottom: 37px;
+    }
+    &__img{
+        cursor: pointer;
+    }
+}
+.wrap-prev-img-product{
+    display: flex;
+    margin-top: 11px;
+}
+.prev-product-img{
+    padding-top: 16px;
+    padding-left: 9px;
+    min-width: 377px;
+}
+body{
+    background: url('//page.png') no-repeat center top;
+}
+.info-product{
+    margin-top: 42px;
+    padding-left: 49px;
+
+}
+.metro-location{
+    background: url('shape-2.png') no-repeat;
+    &__name{
+        font-size: 18px;
+        line-height: 35px;
+        letter-spacing: 1.2px;
+        margin-left: 59px;
+        font-weight: bold;
+    }
+    &__address{
+        line-height: 38px;
+        font-size: 20px;
+        letter-spacing: -1.1px;
+    }
+}
+.price-product{
+    margin-top: 17px;
+    &__day{
+        font-size: 18px;
+        color:$red;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        margin-bottom: 0;
+    }
+    &__month{
+        color:$red;
+        font-size: 18px;
+        letter-spacing: 0.9px;
+    }
+
+}
+.buy-product-wrap{
+    margin-left: 23px;
+    display:flex;
+    margin-top: 32px;
+}
+.prod-btn{
+    border:none;
+    color:#fff;
+    padding: 6px 22px;
+    font-size: 19px;
+    letter-spacing: -0.6px;
+    outline: none;
+    background: none;
+}
+.blue-btn{
+    background: $blue;
+}
+.red-btn{
+    background: $red;
+}
+.arend-btn{
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+    padding-left: 28px;
+    padding-right: 28px;
+
+}
+.one-click-buy{
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    padding-left: 19px;
+    padding-right: 19px;
+}
+.get-consultation{
+    margin: 46px 0 0 28px;
+    &__btn{
+        color:#000;
+        text-decoration: underline;
+    }
+}
+.tab-list{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 91px;
+    &__item{
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        padding: 6px 0;
+        cursor: pointer;
+        border-top:2px solid transparent;
+        border-bottom:2px solid transparent;
+    }
+}
+.tab-info-prod{
+    margin-top: 38px;
+}
+.active-tab{
+    border-top:2px solid $red;
+    border-bottom:2px solid $red;
+    color:$red;
+}
+.data-item-tab{
+    display: none;
+}
+.data-item-tab-active{
+    display: block !important;
+}
+.tab-list-data{
+    padding: 0 91px;
+}
+.tab-list-data{
+    padding-top: 44px;
+}
+.data-item-tab p{
+    font-size: 16px;
+    letter-spacing:0;
+}
+.about-table{
+    width:100%;
+}
+.about-table tr{
+    padding:10px;
+}
+.about-table tr > td{
+    padding: 10px 10px 10px 39px;
+}
+.about-table tr:nth-child(even){
+    background:#f0f0f0;
+}
+.green-btn{
+    background:#89c028;
+    border-radius:24px;
+}
+.footer-small-contact{
+    margin-top: 20px;
+}
+.footer-list-item a{
+    line-height: 3;
+    text-decoration-style:dashed;
+}
