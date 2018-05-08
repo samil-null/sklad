@@ -1,3 +1,3 @@
 # sklad
 repo for sklad
-[sklad.moscow site]:http://sklad.moscow/
+[example.com](http://example.com)
