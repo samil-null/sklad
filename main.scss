@@ -1,5 +1,6 @@
 $red:#f24941;
 $blue:#1184d3;
+$light_Blue:#38a6ed;
 @media (min-width: 1200px){
     .container {
         width: 1142px;
@@ -16,6 +17,7 @@ img{
 }
 a{
     text-decoration: none;
+    transition: .3s ease;
 }
 li{
     list-style: none;
@@ -24,8 +26,8 @@ ul{
     margin-bottom: 0;
 }
 nav{
-    border-top:#d6d3d3 solid 2px;
-    border-bottom:#d6d3d3 solid 2px;
+    border-top:#d6d3d3 solid 1px;
+    border-bottom:#d6d3d3 solid 1px;
 }
 header{
     padding-top:16px;
@@ -84,8 +86,7 @@ header{
 }
 .work-time-wrap{
     background: url(http://sklad.moscow/images/time.png) no-repeat 25px center;
-    padding: 5px 0 0 0;
-    padding-left: 71px;
+    padding: 5px 0 0 71px;
     &__text{
         letter-spacing: .1px;
     }
@@ -149,6 +150,16 @@ body{
         line-height: 38px;
         font-size: 20px;
         letter-spacing: -1.1px;
+
+        &_product{
+            line-height: 31px;
+        }
+    }
+    &_product{
+        margin-top:13px;
+        & p {
+            margin-bottom: 0;
+        }
     }
 }
 .price-product{
@@ -245,7 +256,8 @@ body{
     letter-spacing:0;
 }
 .about-table{
-    width:100%;
+    width:80%;
+    margin: 0 auto;
 }
 .about-table tr{
     padding:10px;
@@ -257,13 +269,282 @@ body{
     background:#f0f0f0;
 }
 .green-btn{
-    background:#89c028;
-    border-radius:24px;
+    background: #89c028;
+    border-radius: 24px;
+    display: block;
+    margin: 0 auto;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 15px;
+    letter-spacing: -0.9px;
+    padding: 8px 36px;
 }
 .footer-small-contact{
     margin-top: 20px;
 }
+.footer-list-item{
+    text-align: center;
+}
 .footer-list-item a{
-    line-height: 3;
-    text-decoration-style:dashed;
+    line-height: 2.7;
+    color:#000;
+    border-bottom: 1px dotted $light_Blue;
+}
+.footer-small-contact a:hover{
+    text-decoration: none;
+}
+footer{
+    margin-top: 50px;
+}
+footer .social-list__text{
+    max-width: 100%;
+    line-height: 1.9;
+    font-size: 18px;
+}
+footer .header-social-address{
+    min-width:auto;
+}
+.social-list__text svg{
+    margin-right: 8px;
+}
+.social-list__text svg path{
+    fill:$light_Blue;
+}
+.btn-pen{
+    font-size: 14px;
+    margin-right: 16px;
+    position: relative;
+}
+footer .wrap-social-list{
+    margin-top: 25px;
+    margin-bottom: 35px;
+}
+.post-footer{
+    border-top: 1px solid #ececec;
+    padding-top:44px;
+}
+.call-back{
+    background: $blue;
+    padding:10px;
+    border-bottom-left-radius: 24px;
+    border-top-left-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-top-right-radius: 24px;
+    margin-bottom: 20px;
+    padding: 8px 45px;
+}
+.call-phone{
+    margin-right: 20px;
+}
+.footer-call-btn{
+    float: right;
+}
+.no-border-top{
+    border-top: none;
+}
+.left-category-box{
+    margin-top: 21px;
+    &__item {
+        margin-bottom: 20px;
+    }
+
+}
+.inner-list-box{
+    &__item{
+        text-decoration: none;
+        font-weight: 200;
+        line-height: 2;
+        display: block;
+        margin-left: 7px;
+        margin-top: 5px;
+    }
+    &__link{
+        line-height: 2.8;
+        color:#000;
+        text-decoration:none;
+
+        &:hover{
+            color:#000;
+            text-decoration: none;
+            font-weight: 700;
+        }
+    }
+}
+.left-cotegory-title{
+    background: none;
+    border: none;
+    text-decoration: underline;
+    outline: none;
+    transition: .3s ease;
+    letter-spacing: 1.3px;
+}
+.left-cotegory-title:hover{
+    font-weight: 900;
+}
+.metro-item{
+    background: url(shape-2_hover.png) no-repeat center left;
+    background-size: 22px 14px;
+    padding-left: 40px;
+    transition: .4s ease;
+
+  &:hover{
+    background: url(shape-2.png) no-repeat center left;
+    background-size: 22px 14px;
+  }
+}
+.inner-list-box{
+    display: none;
+}
+.open-drop-menu{
+    display: block !important;
+}
+.active-drop-menu{
+    font-weight: 700;
+    text-decoration: underline;
+}
+.wrap-title-page{
+    margin-top: 13px;
+    padding-left: 21px;
+}
+.title-page{
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 37px;
+    letter-spacing: 0.9px;
+}
+.sub-title-page{
+    font-size: 28px;
+    line-height: 33px;
+    letter-spacing: -0.7px;
+}
+.variable-view{
+    display: flex;
+    margin-top: 19px;
+    margin-left: 4px;
+    &__btn{
+        background: none;
+        padding: 10px 13px;
+        font-size: 18px;
+        color: #d6d3d3;
+        border: 1px #d6d3d3 solid;
+    }
+
+}
+.no-border-left{
+    border-left: none;
+}
+.size-box{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 25px;
+    margin-top: 24px;
+
+    &__link{
+        font-size: 17px;
+        font-weight: bold;
+        letter-spacing: 1.6px;
+        color:#000;
+        text-decoration: none;
+        transition: .3s ease;
+        &:hover{
+            text-decoration: underline;
+            color:$red;
+        }
+    }
+}
+.active-nav-link{
+    color:$red;
+}
+.metro-box-list{
+    display: flex;
+    margin-top: 21px;
+    margin-left: 22px;
+    &__item{
+        padding-left: 26px;
+    }
+    &__link{
+        letter-spacing: -0.8px;
+        color:#000;
+        text-decoration: none;
+        &:hover{
+            color: $red;
+            text-decoration: none;
+        }
+    }
+}
+.big-view-product-item{
+    border: 1px solid #d6d3d3;
+    padding: 12px 42px;
+    display: flex;
+    margin-bottom: 18px;
+    transition: .3s;
+    &:hover{
+      box-shadow:3px 8px 39px -9px rgba(0, 0, 0, 0.75);
+    }
+}
+.mini-view-product-item:hover{
+  box-shadow: 3px 8px 39px -9px rgba(0, 0, 0, 0.75);
+}
+.product-view-list{
+    margin-top: 28px;
+}
+.info-prod-view{
+    padding-left: 53px;
+    padding-top: 4px;
+}
+.info-prod-view{
+    &__name-link{
+        font-size: 20px;
+        text-transform: uppercase;
+        text-decoration: none;
+        letter-spacing: -0.7px;
+        color:#000;
+        font-weight: bold;
+        &:hover{
+            color:$red;
+        }
+    }
+}
+.info-prod-view .price-product{
+    margin-top: 4px;
+
+}
+.product-view__arend-btn{
+    font-size: 20px;
+    font-weight: bold;
+    padding: 8px 32px;
+    letter-spacing: 0.5px;
+    margin-top: 4px;
+}
+.img-prod-view{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mini-view-product-item{
+    border:1px solid #d6d3d3;
+    padding-top: 13px;
+    margin-bottom: 18px;
+  transition: .3s ease;
+}
+.mini-view-product-item .info-prod-view{
+    padding-left: 0px;
+    padding-bottom: 12px;
+    padding-bottom: 0;
+    padding-top: 0;
+}
+.info-prod-view_mini-view{
+    padding: 20px;
+    padding-left: 20px !important;
+}
+.mini-cart-btn{
+    padding: 8px 0;
+    width: 100%;
+
+}
+.mini-card-prod-info .info-prod-view__name-link,.mini-card-prod-info  .price-product__day{
+  font-size: 16px;
+}
+body{
+    background: url("склады-каталог.jpg") center top no-repeat;
 }
